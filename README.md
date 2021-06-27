@@ -12,3 +12,5 @@
 
 * [Some history](intro/history)
 * [Features overview](intro/features)
+* [Hello World](intro/hello)
+* [`main`](intro/main)

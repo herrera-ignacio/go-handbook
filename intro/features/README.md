@@ -47,3 +47,7 @@ Go's standard library provides clean building blocks and APIs for I/O, text proc
 The libraries and tools make extensive use of contention to reduce the need for configuration and explanation, thus simplifying program logic and making diverse Go programs more similar to each other and thus easier to learn.
 
 Projects built using the go tool use only file and identifier names and an occasional special comment to determine all the libraries, executables, tests, becnhmarks, examples, platform-specific variants, and documentation for a project; the Go source itself contains the build-specification.
+
+## Standard Format
+
+The `gomt` tool rewrites code into the standard format, and the go tool's `fmt` subcommand applies `gofmt` to all the files in the specified package, or the ones in the current directory by default.
