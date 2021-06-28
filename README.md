@@ -15,3 +15,9 @@
 * [Hello World](intro/hello)
 * [`main`](intro/main)
 * [Command Line Arguments](demos/intro/args)
+
+### Demos
+
+> The following are simple demos to illustrate some of Golang features
+
+* [Finding Duplicate Lines](demos/intro/finding-duplicate-lines)
