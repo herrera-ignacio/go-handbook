@@ -21,3 +21,4 @@
 > The following are simple demos to illustrate some of Golang features
 
 * [Finding Duplicate Lines](demos/intro/finding-duplicate-lines)
+* [Animated GIFs](demos/intro/gifs)
