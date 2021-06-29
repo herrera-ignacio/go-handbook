@@ -23,3 +23,4 @@
 * [Finding Duplicate Lines](demos/intro/finding-duplicate-lines)
 * [Animated GIFs](demos/intro/gifs)
 * [Fetching a URL](demos/intro/fetching-url)
+* [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
