@@ -15,13 +15,14 @@
 * [Hello World](intro/hello)
 * [`main`](intro/main)
 * [Command Line Arguments](demos/intro/args)
+* [Named Types](intro/named-types)
+* [Pointers](intro/pointers)
+* [Packages](intro/packages)
+* Demos
+  * [Finding Duplicate Lines](demos/intro/finding-duplicate-lines)
+  * [Animated GIFs](demos/intro/gifs)
+  * [Fetching a URL](demos/intro/fetching-url)
+  * [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
+  * [Web Server](demos/intro/web-server)
 
-### Demos
-
-> The following are simple demos to illustrate some of Golang features
-
-* [Finding Duplicate Lines](demos/intro/finding-duplicate-lines)
-* [Animated GIFs](demos/intro/gifs)
-* [Fetching a URL](demos/intro/fetching-url)
-* [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
-* [Web Server](demos/intro/web-server)
+## Basics
