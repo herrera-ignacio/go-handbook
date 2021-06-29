@@ -24,3 +24,4 @@
 * [Animated GIFs](demos/intro/gifs)
 * [Fetching a URL](demos/intro/fetching-url)
 * [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
+* [Web Server](demos/intro/web-server)
