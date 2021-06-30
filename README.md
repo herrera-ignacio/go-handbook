@@ -10,6 +10,7 @@
 
 ## Introduction
 
+* [Why Go?](intro/why)
 * [Some history](intro/history)
 * [Features overview](intro/features)
 * [Hello World](intro/hello)
