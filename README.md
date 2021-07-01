@@ -27,3 +27,13 @@
   * [Web Server](demos/intro/web-server)
 
 ## Basics
+
+* [Reserved words](basics/keywords)
+* [Names](basics/names)
+* [Declarations](basics/declarations)
+  * Variables
+    * Short Variables
+    * Pointers
+    * `new`
+    * Lifetime
+  * Type
