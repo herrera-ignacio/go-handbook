@@ -31,9 +31,10 @@
 * [Reserved words](basics/keywords)
 * [Names](basics/names)
 * [Declarations](basics/declarations)
-  * Variables
+  * [Variables](basics/declarations/variables)
     * Short Variables
     * Pointers
     * `new`
     * Lifetime
-  * Type
+  * [Types](basics/declarations/types)
+* [Packages and Files](basics/packages)
