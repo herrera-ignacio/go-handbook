@@ -26,16 +26,20 @@
   * [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
   * [Web Server](demos/intro/web-server)
 
-## Basics
+## Foundations
 
-* [Reserved words](basics/keywords)
-* [Names](basics/names)
-* [Declarations](basics/declarations)
-  * [Variables](basics/declarations/variables)
+* [Reserved words](foundations/keywords)
+* [Names](foundations/names)
+* [Declarations](foundations/declarations)
+  * [Variables](foundations/declarations/variables)
     * Short Variables
     * Pointers
     * `new`
     * Lifetime
-  * [Types](basics/declarations/types)
-* [Packages and Files](basics/packages)
-* [Scope](basics/scope)
+    * [Constants](foundations/declarations/constants)
+  * [Types](foundations/declarations/types)
+* [Packages and Files](foundations/packages)
+* [Scope](foundations/scope)
+* [Operators](foundations/operators)
+* [Data Types](foundations/data-types)
+  * [Basic Types](foundations/data-types/basic)
