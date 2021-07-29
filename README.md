@@ -38,3 +38,4 @@
     * Lifetime
   * [Types](basics/declarations/types)
 * [Packages and Files](basics/packages)
+* [Scope](basics/scope)
