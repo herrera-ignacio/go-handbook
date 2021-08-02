@@ -43,3 +43,13 @@
 * [Operators](foundations/operators)
 * [Data Types](foundations/data-types)
   * [Basic Types](foundations/data-types/basic)
+    * Numbers
+      * Integers
+      * Floating Point
+      * Complex
+    * Booleans
+    * Strings
+    * Constants
+  * [Composite Types](foundations/data-types/composite)
+    * Arrays
+    * Structs
