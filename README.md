@@ -38,16 +38,18 @@
 * [Operators](foundations/operators)
 * [Data Types](foundations/data-types)
   * [Basic Types](foundations/data-types/basic)
-    * Numbers
-      * Integers
+    * Number
+      * Integer
       * Floating Point
       * Complex
-    * Booleans
-    * Strings
-    * Constants
+    * Boolean
+    * String
+    * Constant
   * [Composite Types](foundations/data-types/composite)
-    * Arrays
-    * Structs
+    * Array
+    * Slice
+    * Map
+    * Struct
 * [Concurrency: Goroutines and Channels](foundations/concurrency)
 
 ## Demos 

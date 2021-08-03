@@ -2,6 +2,8 @@
 
 * Arrays
 * Slices
+* Maps
+* Structs
 
 ## Arrays
 
@@ -50,3 +52,45 @@ for _, s := range summer {
   }
 }
 ```
+
+## Maps
+
+In Go, a *map* is a reference to a hash table, and a map type is written `map[K]V`, where `K` and `V` are the types of its keys and values. All of the keys in a given map are of the same type, and all of the values are of the same type. The key type `K` must be comparable using `==`.
+
+> A Hash Map is an unordered collection of key/value pairs in which all the keys are distinct, and the value associated with a given key can be retrieved, updated, or removed using a constant number of key comparisons on the average, no matter how large the hash table.
+
+```go
+// Option 1
+ages := make(map[string]int)
+ages["alice"] = 31
+ages["charlie"] = 34
+
+// Option 2
+ages := map[string]int{
+  "alice": 31,
+  "charlie": 34,
+}
+```
+
+## Struct
+
+A *struct* is an aggregate data type that groupes together zero or more named values of arbitrary types as a single entity. Each value is called a *field*. Fields are collected into a single entity that can be copied as unit, passed to functions and returned by them, stored in arrays, and so on.
+
+```go
+type Employee struct {
+  ID int
+  Name string
+  Address string
+  DoB time.Time
+  Position string
+  Salary int
+  ManagerID int
+}
+
+// Struct literal
+type Point struct{ X, Y int} 
+
+p := Point{1, 2}
+```
+
+> See [example](../../../demos/basics/structs/treesort.go)
