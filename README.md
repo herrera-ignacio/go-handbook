@@ -16,15 +16,10 @@
 * [Hello World](intro/hello)
 * [`main`](intro/main)
 * [Command Line Arguments](demos/intro/args)
+* [Multiple return values](demos/intros/multiple-return)
 * [Named Types](intro/named-types)
 * [Pointers](intro/pointers)
 * [Packages](intro/packages)
-* Demos
-  * [Finding Duplicate Lines](demos/intro/finding-duplicate-lines)
-  * [Animated GIFs](demos/intro/gifs)
-  * [Fetching a URL](demos/intro/fetching-url)
-  * [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
-  * [Web Server](demos/intro/web-server)
 
 ## Foundations
 
@@ -53,3 +48,14 @@
   * [Composite Types](foundations/data-types/composite)
     * Arrays
     * Structs
+* [Concurrency: Goroutines and Channels](foundations/concurrency)
+
+## Demos 
+
+* [Networking Basics](demos/intro/networking)
+* [Testing](demos/intro/testing)
+* [Finding Duplicate Lines](demos/intro/finding-duplicate-lines)
+* [Animated GIFs](demos/intro/gifs)
+* [Fetching a URL](demos/intro/fetching-url)
+* [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
+* [Web Server](demos/intro/web-server)
