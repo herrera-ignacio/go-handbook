@@ -50,7 +50,8 @@
     * Slice
     * Map
     * Struct
-* [Concurrency: Goroutines and Channels](foundations/concurrency)
+* [Functions](foundations/functions)
+* [Concurrency: Goroutiones and Channels](foundations/concurrency)
 
 ## Demos 
 
