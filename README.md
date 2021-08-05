@@ -52,6 +52,7 @@
     * Struct
 * [Functions](foundations/functions)
 * [Methods](foundations/methods)
+* [Interfaces](foundations/interfaces)
 * [Concurrency: Goroutiones and Channels](foundations/concurrency)
 
 ## Demos 
