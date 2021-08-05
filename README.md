@@ -51,6 +51,7 @@
     * Map
     * Struct
 * [Functions](foundations/functions)
+* [Methods](foundations/methods)
 * [Concurrency: Goroutiones and Channels](foundations/concurrency)
 
 ## Demos 
