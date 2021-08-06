@@ -45,6 +45,40 @@ Hello World
 4
 ```
 
+### Goroutines vs Threads
+
+* Growable Stacks
+* Goroutine Scheduling
+* GOMAXPROCS
+
+#### Growable Stacks
+
+Each OS thread has a fixed-size block of memory (often as large as 2MB) for its *stack*, the work area where it saves the local variables of functions calls that are in progress or temporarily suspended while another function is called. This fixed-size stack is simultaneously too much and too little depending on the task at hand. Changing the fixed size can improve space efficency and allow more threads to be created, or it can enable more deeply recursive functions, but it cannot do both.
+
+In contrast, a goroutine starts life wih a small stack, typically 2KB. A goroutine's stack, like the stack of an OS thread, holds the local variables of active and suspended function calls, but unlike an OS thread, a goroutine's stack is not fixed; it grows and shrinks as needed. The size limit for a goroutine stack may be as much as 1GB.
+
+#### Goroutine Scheduling
+
+OS Threads are scheduled by the OS kernel. Every few milliseconds, a hardware timer interrupts the processor, which causes a kernel function called the *scheduler* to be invoked. This function suspends the currently executing thread and saves its registers in memory, looks over the list of threads and decides which one should run next, restores that thread's register from memory, then resumes the execution of that thread.
+
+Because OS threads are scheduled by the kernel, passing control from one thread to another requires a full *context switch*, that is, saving the state of one user thread to memory, restoring the state of another, and updating the scheduler's data structures. This operation is slow, due to its poor locality and the number of memory accesses required.
+
+The Go runtime contains its **own scheduler** that uses a technique known as **m:n scheduling**, because it multiplexes (or schedules) *m* goroutines on *n* OS threads. The job of the Go scheduler is analogous to that of the kernel scheduler, but it is concerned only with the goroutines of a single Go program.
+
+Unlike the OS's thread scheduler, the Go scheduler is not invoked periodically by a hardware timer, but implicitly by certain Go langauge constructs. For example, when a goroutine calls `time.Sleep` or blocks in a channel or mutex operation, the scheduler puts it to sleep and runs another goroutine until it is time to wake the first one up. Because it doesn't need a switch to kernel context, rescheduling a goroutine is much cheaper than rescheduling a thread.
+
+#### `GOMAXPROCS`
+
+The Go scheduler uses a parameter called `GOMAXPROCS` to determine how many OS threads may be actively executing Go code simultaneously. Its default value is the number of CPUs on the machine, so on a machine with * CPUs, the scheduler will schedule Go code up on to 8 OS threads at once. Goroutines that are sleeping or blocked in a communication do not need a thread at all. Goroutines that are blocked in I/O or other system calls or are calling non-Go functions, do need an OS threads, but `GOMAXPROCS` need not account for them.
+
+#### Goroutines Have No Identity
+
+In most OS and programming languages that support multithreading, the current thread has a distinct identity that can be easily obtained as an ordinary value, typically an integer or pointer. This makes it easy to build an abstraction called *thread-local storage*, which is essentially a global map keyed by thread identity, so that each thread can store and retrieve values independent of other threads.
+
+Goroutines have no notion of identity that is accessible to the programmer. This is by design, since thread-local storage tends to be abused, however, just as programs that rely excessively on global variables, this can lead to an unhealthy "action at a distance" in which the behavior of a function is not determined by its arguments alone, but buy the identity of the thread in which it runs.
+
+---
+
 ## Channel
 
 *Channels* provide a way for two goroutines to communicate with each other. By default, they block execution, allowing goroutines to synchronize. They can be one-directional or bidirectional.
@@ -174,4 +208,3 @@ A *buffered channel* has a queue of elements. The queue's maximum size is determ
 A `send` operation on a buffered channel inserts an element at the back of the queue, and a `receive` operation removes an element from the front. If the channel is full, the `send` operation blocks its goroutine until space is made available by another goroutine's receive. Conversely, if the channel is empty, a `receive` operation blocks until a value is sent by another goroutine.
 
 > Failure to allocate sufficient buffer capacity would cause the program to **deadlock**.
->

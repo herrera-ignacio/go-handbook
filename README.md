@@ -54,6 +54,12 @@
 * [Methods](foundations/methods)
 * [Interfaces](foundations/interfaces)
 * [Concurrency: Goroutiones and Channels](foundations/concurrency)
+  * Goroutines vs Threads
+  * Unbuffered Channels
+  * Pipelines
+  * Undirirectional Channel Types
+  * Buffered Channels
+* *Concurrency With Shared Variables*: Read/Write Mutexes (`sync`)
 
 ## Demos 
 
