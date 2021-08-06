@@ -59,7 +59,9 @@
   * Pipelines
   * Undirirectional Channel Types
   * Buffered Channels
-* *Concurrency With Shared Variables*: Read/Write Mutexes (`sync`)
+* Concurrency With Shared Variables*: Read/Write Mutexes (`sync`)
+* [Testing](foundations/testing)
+
 
 ## Demos 
 
