@@ -2,11 +2,13 @@
 
 > *"Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."* - golang.org
 
-## Useful Resources
+![](2021-11-02-19-43-23.png)
 
-* [Go Blog](https://blog.golang.org/)
-* [Playground](https://play.golang.org)
-* [Standard Library Documentation](https://golang.org/pkg)
+- [Go Handbook](#go-handbook)
+  - [Introduction](#introduction)
+  - [Foundations](#foundations)
+  - [Demos](#demos)
+  - [Useful Resources](#useful-resources)
 
 ## Introduction
 
@@ -62,7 +64,6 @@
 * Concurrency With Shared Variables*: Read/Write Mutexes (`sync`)
 * [Testing](foundations/testing)
 
-
 ## Demos 
 
 * [Networking Basics](demos/intro/networking)
@@ -72,3 +73,9 @@
 * [Fetching a URL](demos/intro/fetching-url)
 * [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
 * [Web Server](demos/intro/web-server)
+
+## Useful Resources
+
+* [Go Blog](https://blog.golang.org/)
+* [Playground](https://play.golang.org)
+* [Standard Library Documentation](https://golang.org/pkg)
