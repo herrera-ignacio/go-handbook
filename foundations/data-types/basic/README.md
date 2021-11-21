@@ -1,12 +1,14 @@
 # Basic Data Types
 
-* Numbers
-  * Integers
-  * Floating Point
-  * Complex
-* Booleans
-* Strings
-* Constants
+- [Basic Data Types](#basic-data-types)
+  - [Numbers](#numbers)
+    - [Integers](#integers)
+    - [Floating Point](#floating-point)
+    - [Complex](#complex)
+  - [Booleans](#booleans)
+  - [Strings](#strings)
+  - [Constants](#constants)
+
 
 ## Numbers
 
@@ -90,3 +92,26 @@ Four standard packages are particularly important for manipuilating strings: `by
 * `strconv`: provides functions for converting boolean, integer, and floating-point values to and from their string representations, and functions for quoting and unquoting strings.
 
 * `unicode`: provides functions like `IsDigit`, `IsLetter`, `IsUpper` and `IsLower` for classifiying runes.
+
+## Constants
+
+Constants refer to *fixed values* that the program may not alter during its execution. These fixed values are also called *literals*. They are treated just like regular variables except that their values cannot be modified after their initial definition.
+
+Constants can be of any of the *basic data types* like an integrer constant, a floating constant, a character constant, or a string literal. There are also enumartion constants as well.
+
+You can use `const` prefix to declara constants with a specific type as follows:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+   const LENGTH int = 10
+   const WIDTH int = 5   
+   var area int
+
+   area = LENGTH * WIDTH
+   fmt.Printf("value of area : %d", area)   
+}
+```

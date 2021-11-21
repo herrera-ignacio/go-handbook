@@ -15,8 +15,8 @@ At the package level, **the order in which declarations appeaar has no effect on
 
 ## Syntactic & Lexical Blocks
 
-A *synatic block* is a sequence of statements enclosed in braces like those that surround the body of a function or a loop.
+A *syntactic block* is a sequence of statements enclosed in braces like those that surround the body of a function or a loop.
 
 A name declared inside a syntactic block is not visible outside that block. The block **encloses its declarations and determines their scope**.
 
-We can generalize this notion of blocks to include other groupings of declarations that are not explicitly surrounded entire by braces in the source code; we'll call them all *lexical blocks*.
+We can generalize this notion of blocks to include other groupings of declarations that are not explicitly surrounded entirely by braces in the source code; we'll call them all *lexical blocks*.
