@@ -1,15 +1,25 @@
 # Concurrency: *goroutines* and *channels*
 
+- [Concurrency: *goroutines* and *channels*](#concurrency-goroutines-and-channels)
+	- [Overview](#overview)
+	- [Goroutine](#goroutine)
+		- [Goroutine Example: Printing concurrently](#goroutine-example-printing-concurrently)
+		- [Goroutines vs Threads](#goroutines-vs-threads)
+			- [Growable Stacks](#growable-stacks)
+			- [Goroutine Scheduling](#goroutine-scheduling)
+			- [`GOMAXPROCS`](#gomaxprocs)
+			- [Goroutines Have No Identity](#goroutines-have-no-identity)
+	- [Channel](#channel)
+		- [Unbuffered Channels](#unbuffered-channels)
+		- [Pipelines](#pipelines)
+		- [Undirectional Channel Types](#undirectional-channel-types)
+		- [Buffered Channels](#buffered-channels)
+
+## Overview
+
 Most programming languages were designed for processors with a single core. Go was designed with parallel and concurrent processing in mind. Go enables two style of concurrent programming, *goroutines* and *channels* support **communicating sequential processes (CSP)**, a model of concurrency in which values are passed between independent activities (goroutines1) but variables are for the most part confined toa single activity. On the other hand, Go also supports the more traditional model of **shared memory multithreading**.
 
 > The differences between threads and goroutines are essentially quantitative, not qualitative.
-
-* Goroutines
-* Channels
-  * Unbuffered Channels
-  * Pipelines
-  * Undirirectional Channel Types
-  * Buffered Channels
 
 ## Goroutine
 
