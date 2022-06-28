@@ -4,6 +4,8 @@
 
 ![](2021-11-02-19-43-23.png)
 
+> Check [Go In Practice repository](https://github.com/herrera-ignacio/go-in-practice) for a selection of common problems and solutions.
+
 - [Go Handbook](#go-handbook)
   - [Introduction](#introduction)
   - [Foundations](#foundations)
@@ -73,6 +75,7 @@
 * [Fetching a URL](demos/intro/fetching-url)
 * [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
 * [Web Server](demos/intro/web-server)
+* [Reading inputs from STDIN](demos/intro/reading-inputs.go)
 
 ## Useful Resources
 
