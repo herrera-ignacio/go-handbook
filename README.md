@@ -4,10 +4,11 @@
 
 ![](2021-11-02-19-43-23.png)
 
-> Check [Go In Practice repository](https://github.com/herrera-ignacio/go-in-practice) for a selection of common problems and solutions.
+> Check 
 
 - [Go Handbook](#go-handbook)
   - [Introduction](#introduction)
+  - [Resources Quick Access](#resources-quick-access)
   - [Foundations](#foundations)
   - [Demos](#demos)
   - [Useful Resources](#useful-resources)
@@ -24,6 +25,11 @@
 * [Named Types](intro/named-types)
 * [Pointers](intro/pointers)
 * [Packages](intro/packages)
+
+## Resources Quick Access
+
+* [Go by Example](https://gobyexample.com/): Handy examples.
+* [Go In Practice](https://github.com/herrera-ignacio/go-in-practice): A selection of good practices.
 
 ## Foundations
 
@@ -75,7 +81,7 @@
 * [Fetching a URL](demos/intro/fetching-url)
 * [Concurrently Fetch URLs](demos/intro/concurrent-fetch)
 * [Web Server](demos/intro/web-server)
-* [Reading inputs from STDIN](demos/intro/reading-inputs.go)
+* [Reading inputs from STDIN](demos/intro/reading-inputs/main.go)
 
 ## Useful Resources
 
